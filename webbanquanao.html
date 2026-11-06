@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop Quần Áo Mây</title>
+
+  <!-- Phần CSS: dùng để trang trí trang web -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f5f0;
+      color: #333333;
+    }
+
+    /* Thanh đầu trang */
+    header {
+      background-color: #1f3a5f;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header p {
+      margin: 8px 0 0 0;
+    }
+
+    /* Thanh menu */
+    nav {
+      background-color: #e9b44c;
+      text-align: center;
+      padding: 12px;
+    }
+    nav a {
+      color: #1f3a5f;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    /* Tiêu đề từng phần */
+    h2 {
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    /* Khung chứa tất cả sản phẩm */
+    .danh-sach {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Mỗi sản phẩm là một khung */
+    .san-pham {
+      background-color: white;
+      width: 200px;
+      border: 1px solid #dddddd;
+      border-radius: 10px;
+      text-align: center;
+      padding: 15px;
+    }
+    .hinh {
+      font-size: 80px;
+      background-color: #f0ece3;
+      border-radius: 8px;
+      padding: 15px 0;
+    }
+    .san-pham h3 {
+      font-size: 18px;
+      margin: 12px 0 5px 0;
+    }
+    .gia {
+      color: #c0392b;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .san-pham button {
+      background-color: #1f3a5f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 18px;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+    .san-pham button:hover {
+      background-color: #e9b44c;
+      color: #1f3a5f;
+    }
+
+    /* Phần liên hệ */
+    .lien-he {
+      background-color: white;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #1f3a5f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Đầu trang -->
+  <header>
+    <h1>Shop Quần Áo Mây</h1>
+    <p>Thời trang đơn giản, mặc thoải mái mỗi ngày</p>
+  </header>
+
+  <!-- Menu: bấm vào sẽ nhảy đến phần tương ứng -->
+  <nav>
+    <a href="#san-pham">Sản phẩm</a>
+    <a href="#lien-he">Liên hệ</a>
+  </nav>
+
+  <h2 id="san-pham">Bộ sưu tập 10 bộ quần áo</h2>
+
+  <div class="danh-sach">
+
+    <!-- Sản phẩm 1 -->
+    <div class="san-pham">
+      <div class="hinh">👕</div>
+      <h3>Áo thun trắng</h3>
+      <p>Chất cotton mềm, dễ phối đồ</p>
+      <p class="gia">150.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <!-- Sản phẩm 2 -->
+    <div class="san-pham">
+      <div class="hinh">👔</div>
+      <h3>Áo sơ mi xanh</h3>
+      <p>Lịch sự, hợp đi làm</p>
+      <p class="gia">280.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <!-- Sản phẩm 3 -->
+    <div class="san-pham">
+      <div class="hinh">👖</div>
+      <h3>Quần jean xanh</h3>
+      <p>Co giãn nhẹ, bền đẹp</p>
+      <p class="gia">350.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <!-- Sản phẩm 4 -->
+    <div class="san-pham">
+      <div class="hinh">👗</div>
+      <h3>Váy hoa nhí</h3>
+      <p>Nhẹ nhàng, hợp đi chơi</p>
+      <p class="gia">320.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <!-- Sản phẩm 5 -->
+    <div class="san-pham">
+      <div class="hinh">🧥</div>
+      <h3>Áo khoác gió</h3>
+      <p>Chống gió, chống nước nhẹ</p>
+      <p class="gia">450.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <!-- Sản phẩm 6 -->
+    <div class="san-pham">
+      <div class="hinh">🩳</div>
+      <h3>Quần short kaki</h3>
+      <p>Thoáng mát cho mùa hè</p>
+      <p class="gia">200.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <!-- Sản phẩm 7 -->
+    <div class="san-pham">
+      <div class="hinh">🧶</div>
+      <h3>Áo len cổ tròn</h3>
+      <p>Ấm áp cho ngày se lạnh</p>
+      <p class="gia">380.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <!-- Sản phẩm 8 -->
+    <div class="san-pham">
+      <div class="hinh">👚</div>
+      <h3>Áo kiểu nữ</h3>
+      <p>Thanh lịch, dễ mặc</p>
+      <p class="gia">260.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <!-- Sản phẩm 9 -->
+    <div class="san-pham">
+      <div class="hinh">🥋</div>
+      <h3>Bộ đồ thể thao</h3>
+      <p>Co giãn tốt, hợp tập luyện</p>
+      <p class="gia">420.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <!-- Sản phẩm 10 -->
+    <div class="san-pham">
+      <div class="hinh">😴</div>
+      <h3>Bộ đồ ngủ</h3>
+      <p>Vải mịn, ngủ ngon cả đêm</p>
+      <p class="gia">240.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+
+  </div>
+
+  <!-- Liên hệ -->
+  <div class="lien-he" id="lien-he">
+    <h2 style="margin-top:0">Liên hệ</h2>
+    <p>Điện thoại: 0123 456 789</p>
+    <p>Email: shopmay@example.com</p>
+    <p>Mở cửa: 8h – 21h mỗi ngày</p>
+  </div>
+
+  <footer>
+    <p>© 2026 Shop Quần Áo Mây</p>
+  </footer>
+
+</body>
+</html>
